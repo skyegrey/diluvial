@@ -3,10 +3,15 @@
 
   <div class="field">
     <label for="title">Title:</label>
-    <input name="title">
+    <input name="title" #newTitle>
   </div>
   <div class="field">
     <label for="link">Link:</label>
-    <input name="link">
+    <input name="link" #newLink>
   </div>
+  <button
+    (click)="addArticle(newTitle, newLink)"
+    class="ui positive right floated button">
+    Submit Link
+  </button>
 </form>
