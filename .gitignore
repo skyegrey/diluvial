@@ -1,3 +1,8 @@
 **/node_modules
 .idea/
 **/.angular
+/sample-code/
+.DS_Store
+.vscode/
+.browserslistrc
+.editorconfig
