@@ -24,6 +24,10 @@
         class="ui error message">
         SKU is required
       </div>
+      <div *ngIf="sku.hasError('invalidSku')"
+           class="ui error message">
+        SKU must begin with <span>123</span>
+      </div>
     </div>
     <div
       *ngIf="!myForm.valid"
